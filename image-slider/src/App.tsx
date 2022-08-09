@@ -1,7 +1,19 @@
-import React from "react";
+import styled from "@emotion/styled";
+import ImageSlider from "./components/ImageSlider";
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+`;
 
 function App() {
-  return <div>hi</div>;
+  return (
+    <Container>
+      <ImageSlider />
+    </Container>
+  );
 }
 
 export default App;
