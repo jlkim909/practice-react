@@ -106,11 +106,13 @@ const weekStringArr = [
   "November",
   "December",
 ];
+
 function Calendar() {
   const today = getDate();
   const [date, setDate] = useState(getDate());
   const [selected, setSelected] = useState({ month: 20, date: 1 });
   const [showCalendar, setShowCalendar] = useState(false);
+
   const onClickRight = () => {
     setDate((prev) => {
       if (prev.month === 11) {
